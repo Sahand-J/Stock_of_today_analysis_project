@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[86]:
-
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -17,8 +14,6 @@ import yfinance as yf
 import datetime
 import yahoo_fin.stock_info as si
 
-
-# In[87]:
 
 
 class StockOfToday:
@@ -128,14 +123,6 @@ class StockOfToday:
         return yearly_rec_df[['revenue','earnings']]
      
 
-
-# In[ ]:
-
-
-
-
-
-# In[88]:
 
 
 class stock_of_today_list():
@@ -499,9 +486,6 @@ class stock_of_today_list():
         
 
 
-# In[89]:
-
-
 class stock_menu_looper():
     
     #Class that initializes an instance of Stock Of Today list object for menu options
@@ -541,9 +525,6 @@ class stock_menu_looper():
     def stock_list_len(self):
         return len(self.s.return_stock_list())
     
-
-
-# In[90]:
 
 
 #Menu for executing methods to analyze individual or list of stocks
@@ -647,8 +628,6 @@ def stock_list_menu():
                 return main_menu()
 
 
-# In[91]:
-
 
 #Menu to analyze list of stocks and to analyze sharpe ratio of a portfolio
 def portfolio_menu():
@@ -707,9 +686,6 @@ def portfolio_menu():
             
 
 
-# In[92]:
-
-
 # Main menu, starting point to analysis stocks of interest
 def main_menu():
     
@@ -742,7 +718,6 @@ def main_menu():
 
 
 # In[95]:
-
 
 main_menu()
 
