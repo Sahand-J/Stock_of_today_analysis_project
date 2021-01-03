@@ -746,10 +746,3 @@ def main_menu():
 
 main_menu()
 
-
-# In[94]:
-
-
-#while(1):
-    #main_menu()
-
