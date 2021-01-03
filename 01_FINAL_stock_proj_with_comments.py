@@ -851,18 +851,3 @@ def main_menu():
 
 
 main_menu()
-
-
-# In[10]:
-
-
-#while(1):
-    #main_menu()
-
-
-# In[11]:
-
-
-#index_funds= 'spy,voo,vti,schb,vxus,vt,nobl'
-#individ_comp = 'jpm,dfs,bac,pep,unp,ko,avgo,tgt,dis,mcd,nsc,hd'
-
