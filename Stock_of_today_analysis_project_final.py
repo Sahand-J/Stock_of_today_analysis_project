@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -13,7 +10,6 @@ import math
 import yfinance as yf
 import datetime
 import yahoo_fin.stock_info as si
-
 
 
 class StockOfToday:
@@ -122,6 +118,7 @@ class StockOfToday:
         yearly_rec_df.set_index(yearly_rec_df['date'],inplace=True)
         return yearly_rec_df[['revenue','earnings']]
      
+
 
 
 
@@ -484,8 +481,6 @@ class stock_of_today_list():
             fig.autofmt_xdate()
             plt.show()
         
-
-
 class stock_menu_looper():
     
     #Class that initializes an instance of Stock Of Today list object for menu options
@@ -520,11 +515,6 @@ class stock_menu_looper():
     # Returns instance of Stock Of Today list object
     def init_stock_obj(self):
         return self.s
-    
-    # Returns length of Stock Of Today list
-    def stock_list_len(self):
-        return len(self.s.return_stock_list())
-    
 
 
 #Menu for executing methods to analyze individual or list of stocks
@@ -540,7 +530,8 @@ def stock_list_menu():
         return main_menu()
         
     #LIST MENU        
-    if s.stock_list_len()>1:
+    #if s.stock_list_len()>1:
+    if len(s.init_stock_obj().return_stock_list())>1:
         while 1>0:
             print('list menu')
             print (30 * "-" , "Stock-List Menu" , 30 * "-")
@@ -626,6 +617,7 @@ def stock_list_menu():
             #back to menu
             else:
                 return main_menu()
+
 
 
 
@@ -716,8 +708,4 @@ def main_menu():
         return main_menu()
     
 
-
-# In[95]:
-
 main_menu()
-
