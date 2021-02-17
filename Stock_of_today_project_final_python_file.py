@@ -15,21 +15,6 @@ import yahoo_fin.stock_info as si
 from datetime import date
 
 
-# In[14]:
-
-
-pwd
-
-
-# In[ ]:
-
-
-
-
-
-# In[15]:
-
-
 class StockOfToday:
     
     # Class used to represent Stock prices Dataframe
@@ -825,10 +810,5 @@ def main_menu():
         return main_menu()
 
 
-# In[23]:
-
 
 main_menu()
-
-
-# tsla-1,voo-4,vti-8,amat-6,dfs-7,tgt-10,jpm-8,vt-12,vxus-9,avgo-4,dgro-15,schd-8,nobl-9,schb-2,qqq-1,nsc-2,sdy-2,spy-1,unp-1,land-3,dis-1,gm-5,stor-2,iipr-5,aapl-3,ko-2
